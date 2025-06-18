@@ -15,7 +15,7 @@ Feel free to explore and see what I’ve been working on!
 
 ## 📁 Live Demo
 
-Check out the live version here: [Portfolio Website](https://your-username.github.io/your-repo-name)  
+Check out the live version here: https://dharani-debug-stack.github.io/simple-portfolio/  
 
 
 ## 📫 Contact
@@ -23,6 +23,7 @@ Check out the live version here: [Portfolio Website](https://your-username.githu
 Want to connect?  
 - Email: dharaniwebdev@gmail.com    
 - GitHub: https://github.com/Dharani-debug-Stack
+- LinkedIn: www.linkedin.com/in/dharaniarungulavan
 
 ---
 
