@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>Portofolio</title>
+    <style>
+        .list li {
+            background-image: linear-gradient(rgb(126, 58, 242), rgb(126, 58, 242));
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 0% 2px;
+            transition: background-size 0.4s ease;
+            padding-bottom: 5px;
+            /* space for the underline */
+        }
+
+        .list li:hover {
+            color: rgb(126, 58, 242);
+            background-size: 100% 2px;
+        }
+        .typing-animation {
+            border-right: 2px solid #3B82F6;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:typing 4s steps(25)  infinite, blink 0.7s step-end infinite;
+        }
+
+        @keyframes typing {
+            from{width: 0;}
+            to{width: 22ch;}
+            
+        }
+        @keyframes blink {
+         50% { border-color: transparent; }
+           
+        }
+        @keyframes spin360{
+          0%{
+            transform: rotate(0deg);
+
+          }
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+        .spin:hover{
+          animation: spin360 1s linear infinite;
+        }
+        
+  
+  @keyframes slowBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .slow-bounce {
+    animation: slowBounce 1.2s ease-in-out infinite;
+  }
+</style>
+
+</head>
+
+<body class="bg-gradient-to-r from-white via-white to-purple-100 m-5 ">
+    <section class="sticky top-0 z-20">
+        <!-- navbar -->
+        <nav class="flex justify-between sticky top-0 md:justify-around items-center   bg-gradient-to-r from-white via-white to-purple-100 z-20">
+          <div class="flex items-center"> <img src="img/da.jpg" class="w-20 h-20"> <h1 class="font-bold text-xl  text-blue-400 md:text-2xl" >Dharani Arungulavan</h1></div>
+            <ul class="hidden list flex gap-16 items-center md:flex ">
+               <a href="#about"> <li>Home</li></a>
+               
+                <a href="#about"><li>About</li></a>
+               <a href="#skill"> <li>Skills</li></a>
+                <a href="#project"><li>Projects</li></a>
+                <a href="#contact"><li>Contact</li></a>
+                <a href="mailto:dharaniwebdev@gmail.com" target="_blank"></a><span
+                    class="font-bold text-white rounded-xl bg-gradient-to-l from-purple-800 to-purple-200 pl-4 pr-4 pt-2 pb-2">Hire
+                    Me!</span></a>
+            </ul>
+ <div class="toggle md:hidden">  <i class="fa-solid fa-bars text-xl  " style="color: rgb(126, 58, 242);"></i></div>
+        </nav>
+
+        <!-- side nav -->
+         </section>
+   
+    <section  id ="side-Nav" class="flex  bg-white flex-col gap-10 z-30 transition-all duration-1000 font-serif top-0 fixed p-4  md:flex " style=" width: 50%; right: -50%;">
+      <h2 class="closeNav text-xs text-right md:text-xl">X</h2>
+      <ul class=" list m-5 flex  flex-col gap-5 z-10  md:hidden ">
+                <a href="#about"> <li>Home</li></a>
+               
+                <a href="#about"><li>About</li></a>
+               <a href="#skill"> <li>Skills</li></a>
+                <a href="#project"><li>Projects</li></a>
+                <a href="#contact"><li>Contact</li></a>
+               <a href="mailto:dharaniwebdev@gmail.com" target="_blank"> <span
+                    class="font-bold text-white rounded-xl bg-gradient-to-l from-purple-800 to-purple-200 pl-2 pr-2 pt-1 pb-1">Hire
+                    Me!</span></a>
+            </ul>
+    </section>
+        <!-- about -->
+        <section id="about" class=" flex  " style="background-image: url('img/Blue\ and\ Black\ Modern\ Technology\ Presentation.png'); background-repeat: no-repeat; background-size: cover; background-position:center;">
+<div class="mt-20 md:ml-32" >
+                <h1  class="font-bold text-5xl m-4 text-white">Hi, I'm <span class="text-blue-400"> Dharani</span> </h1>
+                <h2 class=" typing-animation font-bold text-2xl text-purple-800 m-4 md:text-4xl ">Next-Level Web Developer</h2>
+                <p class="m-4  text-white">Passionate full-stack developer specializing in HTML, CSS, Tailwind CSS, JavaScript. I create scalable web applications with modern technologies and clean code practices.
+
+                </p>
+                     <!-- Resume and Icons -->
+      <div class="flex flex-col sm:flex-row m-2 ">
+       <a href="dharani A.pdf" target="_blank" ><button type=" "class="border border-purple-600 bg-purple-100 text-purple-600 px-2 py-1 md:px-4 md:py-2 rounded-full hover: transition">
+          Resume <i class="fas fa-download "></i></a> 
+        </button>
+        <div class="flex space-x-4  text-white hover: text-purple-600 text-xl m-2">
+         <a href="https://www.linkedin.com/in/dharaniarungulavan" target="_blank" class="rounded-2xl border border-purple-400 p-2 hover:bg-purple-200"> <i class="fa-brands fa-linkedin"></i></a>
+         <a href="https://leetcode.com/u/dharani_Arungulavan/" target="_blank"  class="rounded-2xl border border-purple-400 p-2  hover:bg-purple-200"> <img src="leetcode.png" style="width: 20px;"></a>
+
+
+          <a href="https://github.com/Dharani-debug-Stack" target="_blank" class="rounded-2xl border border-purple-400 p-2  hover:bg-purple-200"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      
+           </div>
+          
+      
+    </div>
+        </section>
+
+        <!-- About section -->
+
+        <section class="flex  flex-col gap-3  flex-wrap items-center mt-20">
+            <h2 class="font-bold text-4xl">About</h2>
+            <h2 class="text-xl text-gray-600 md:text-2xl">
+                Dedicated to crafting exceptional digital experiences through innovative web development
+            </h2>
+        </section>
+      
+           <section class=" gap-6 max-w-3xl mx-auto px-4 py-8  md:flex">
+
+            <div style="width: 100%;" >
+                <h2 class="text-2xl font-semibold mb-6">
+                    My Journey
+                </h2>
+                <p class="text-gray-600 text-sm">My journey began at the  Bharathidasan University. From 2022 to 2025, I pursued my graduation in Computer Science, where I built a solid foundation in programming, problem-solving, and logical thinking. I actively engaged in tech fests, awareness programs, and contributed to various academic and social initiatives.</p><p class="text-gray-600 text-sm"> After graduation, I joined Error Makes Clever, where I immersed myself in the world of MERN Stack Development. There, I enhanced my frontend and backend skills, worked on real-time projects, and began building my professional portfolio. This transition from academics to applied development helped me gain confidence, practical experience, and a deeper passion for becoming a full-stack developer.</p>
+            </div>
+
+            <div>
+  
+  
+  <h2 class="text-2xl font-semibold mb-6">Education Timeline</h2>
+
+  <ol class="relative border-l border-gray-300">
+
+    <!-- 🎓 Education -->
+    <li class="mb-10 ml-6">
+      <span class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-purple-600 ring-4 ring-white"></span>
+      <h3 class="text-xl font-bold">B.Sc. in Computer Science</h3>
+        <p class="text-blue-600 font-medium">Kalaingar Karunanidhi Government Arts College for Women</p>
+        <p class="text-sm text-gray-600">Affiliated with Bharathidasan University. Focused on building academic strength and real-world knowledge in Computer Science.</p>
+        <p class="text-sm text-gray-500">2022 – 2025</p>
+    </li>
+
+    <!-- 🌐 Social Media & Activities -->
+    <li class="mb-10 ml-6">
+      <span class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-green-600 ring-4 ring-white"></span>
+      <h3 class="text-xl font-bold">Activities and Societies</h3>
+        <p class="text-sm text-gray-600">
+          Participated as a Web Developer in GACCTSES-24 and secured First Prize. Developed event websites using HTML, CSS, and JavaScript.
+        </p>
+        <p class="text-sm text-gray-500">2022 – 2025</p>
+      
+    </li>
+
+    <!-- 🏆 Grade -->
+    <li class="ml-6">
+      <span class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-yellow-500 ring-4 ring-white"></span>
+       <h3 class="text-xl font-bold">Academic Grade</h3>
+        <p class="text-sm text-gray-600">
+          Consistently scored distinction marks with a strong focus on both academics and practical learning. Final GPA: <strong>8.3 / 10</strong>
+        </p>
+        <p class="text-sm text-gray-500">Graduated in 2025</p>
+    </li>
+
+  </ol>
+
+  </div>
+</section>
+
+<!-- skills -->
+ <section id="skill"class="flex  flex-col gap-3  flex-wrap items-center mt-20">
+<h2 class="font-bold text-4xl">Technical Skills</h2>
+            <h2 class="text-xl text-gray-600 mb-5  md:text-2xl">
+              Proficient in modern web technologies with expertise in the MERN stack
+            </h2>
+            <!-- skill icons -->
+            <div class="grid grid-cols-2 gap-8 md:flex">
+
+<div class=" slow-bounce p-2 bg-black text-white rounded-full text-5xl items-center flex justify-center hover:scale-110 transition-transform duration-300"> 
+  <i class="fa-brands fa-html5 spin "></i>
+</div>
+
+<div class="slow-bounce w-16 p-2 bg-black text-white rounded-full text-5xl items-center flex justify-center hover:scale-110 transition-transform duration-300"> 
+ <i class="fa-brands fa-css3-alt spin"></i>
+</div>
+<div class=" slow-bounce w-16 p-2 bg-black text-white rounded-full text-5xl items-center flex justify-center hover:scale-110 transition-transform duration-300"> 
+  <img src="img/tailwind.png" class="rounded-full spin">
+</div>
+<div class=" p-2 bg-black text-white rounded-full text-5xl items-center flex justify-center slow-bounce"> 
+  <img src="img/icons8-javascript-64.png" class="rounded-full spin ">
+</div>
+ </div>
+ </section>
+
+
+<!-- projects -->
+ <section id="project" class="flex  flex-col gap-3  flex-wrap items-center mt-20">
+<h2 class="font-bold text-4xl">Featured Projects</h2>
+            <h2 class="text-xl text-gray-600 md:text-2xl">
+                A showcase of my recent work and personal projects built with modern technologies
+            </h2>
+ </section>
+
+ <!-- projects buttons section -->
+  <section class="mb-10 mt-10 flex justify-center gap-3 flex-wrap">
+    <button class="mainBtn bg-blue-500 p-2 rounded font-bold text-white ">All Projects</button>
+    <button  class="btn1 hover:bg-blue-500 hover:text-white p-2 rounded font-bold ">HTML & CSS</button>
+    <button  class="btn2 hover:bg-blue-500 hover:text-white p-2 rounded font-bold ">Tailwind CSS</button>
+    <button  class="btn3 hover:bg-blue-500 hover:text-white p-2 rounded font-bold ">JavaScript</button>
+  </section>
+
+  <!-- project image section -->
+   <div id="image-container" class="flex gap-10 justify-center flex-wrap">
+    <div style="width: 400px;" class=" html hover:-translate-y-3 transition-transform transform duration-300 ease-in-out hover:shadow-2xl rounded-xl  shadow mt-10 mb-10 p-3  ;">
+      <img src="img/learny.png " >
+      <h3 class="font-bold mt-2 mb-2">Learny – Udemy Clone</h3>
+      <p class="mb-3">Learny is a responsive landing page clone of Udemy, built using HTML and CSS. It features sections like navigation, course listings, and a footer, helping me strengthen my frontend and responsive design skills.</p>
+      <!-- overlay -->
+<div class=" bg-black h-48 w-full absolute left-0 top-0 opacity-0 hover:opacity-70 " >
+ 
+  <a href=" https://dharani-debug-stack.github.io/Learny-project/"  target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square absolute top-24 left-40 text-2xl text-white "></i></a>
+  <a href="https://github.com/Dharani-debug-Stack/Learny-project"  target="_blank"><i class="fa-brands fa-github absolute top-24 right-40 text-2xl text-white "></i></a>
+ 
+</div>
+      <span class="p-2 m-2 bg-pink-200  text-pink-400 rounded-xl">HTML</span> <span class="p-2 text-green-400 bg-green-200 rounded-xl">CSS</span>
+    </div>
+
+     <div style="width: 400px;" class="html hover:-translate-y-3 transition-transform transform duration-300 ease-in-out hover:shadow-2xl rounded-xl  shadow mt-10 mb-10 p-3  ;">
+      <img src="img/Screenshot 2025-06-28 141656.png" >
+      <h3 class="font-bold mt-2 mb-2">TripAdvisor Clone</h3>
+      <p class="mb-3">A responsive homepage clone of TripAdvisor built using HTML and CSS. It includes a search bar, destination cards, and a clean travel-themed layout to improve my frontend design skills.
+
+</p>
+<!-- overlay -->
+<div class=" bg-black h-48 w-full absolute left-0 top-0 opacity-0 hover:opacity-70 " >
+ 
+  <a href="  https://dharani-debug-stack.github.io/Tripadvisor-clone/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square absolute top-24 left-40 text-2xl text-white "></i></a>
+  <a href="https://github.com/Dharani-debug-Stack/Tripadvisor-clone" target="_blank"><i class="fa-brands fa-github absolute top-24 right-40 text-2xl text-white "></i></a>
+ 
+</div>
+      <span class="p-2 m-2 text-pink-400 bg-pink-200 rounded-xl">HTML</span> <span class="p-2 text-green-400 bg-green-200 rounded-xl">CSS</span>
+    </div>
+
+     <div style="width: 400px;" class=" tcss hover:-translate-y-3 transition-transform transform duration-300 ease-in-out hover:shadow-2xl rounded-xl shadow mt-10 mb-10 p-3  ;">
+      <img src="img/Screenshot 2025-07-05 070544.png  " >
+      <h3 class="font-bold mt-2 mb-2">E-commerce Platform</h3>
+      <p class="mb-3">Greeden is a plant store website with product listings, interactive UI, and search features, built to enhance my frontend and JavaScript skills..</p>
+      <!-- overlay -->
+<div class=" bg-black h-48 w-full absolute left-0 top-0 opacity-0 hover:opacity-70 " >
+ 
+  <a href=" https://dharani-debug-stack.github.io/greeden-tailwind/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square absolute top-24 left-40 text-2xl text-white "></i></a>
+  <a href="https://github.com/Dharani-debug-Stack/greeden-tailwind"  target="_blank"><i class="fa-brands fa-github absolute top-24 right-40 text-2xl text-white "></i></a>
+ 
+</div>
+      
+      <div class="flex flex-wrap items-center"><span class="p-2 m-2 text-pink-400 bg-pink-200 rounded-xl">HTML</span> <span class="p-2 text-green-400 bg-green-200 rounded-xl">Tailwind CSS</span><span class="p-2 m-2 text-purple-400 bg-purple-200 rounded-xl">JavaScript</span>
+    </div>
+    </div>
+     <div style="width: 400px;" class=" js hover:-translate-y-3 transition-transform transform duration-300 ease-in-out hover:shadow-2xl rounded-xl  shadow mt-10 mb-10 p-3  ;">
+      <img src="img/studentform.png" >
+      <h3 class="font-bold mt-2 mb-2">Student Form</h3>
+      <p class="mb-3">A dynamic student form that allows users to add, edit, and delete student details. Built using JavaScript for real-time form validation and table updates.
+</p>
+<!-- overlay -->
+<div class=" bg-black h-48 w-full absolute left-0 top-0 opacity-0 hover:opacity-70 " >
+ 
+  <a href="https://dharani-debug-stack.github.io/student-registration/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square absolute top-24 left-40 text-2xl text-white "></i></a>
+  <a href="https://github.com/Dharani-debug-Stack/student-registration" target="_blank"><i class="fa-brands fa-github absolute top-24 right-40 text-2xl text-white "></i></a>
+ 
+</div>
+    <div class="flex flex-wrap items-center"> <span class="p-2 m-2 text-pink-400 bg-pink-200 rounded-xl">HTML</span> <span class="p-2 text-green-400 bg-green-200 rounded-xl">Tailwind CSS</span><span class="p-2 m-2 text-purple-400 bg-purple-200 rounded-xl">JavaScript</span>
+     </div>
+    </div>
+
+    <div style="width: 400px;" class=" js relative hover:-translate-y-3 transition-transform transform duration-300 ease-in-out hover:shadow-2xl rounded-xl  shadow mt-10 mb-10 p-3  ;">
+      <img src="img/nostra.png " >
+      <h3 class="font-bold mt-2 mb-2">E-commerce Platform</h3>
+      <p class="mb-3">Nostra is a fashion e-commerce site featuring product listings, responsive design, and a functional search bar built with JavaScript to filter items in real time.
+
+</p>
+<div class=" bg-black h-48 w-full absolute left-0 top-0 opacity-0 hover:opacity-70 " >
+ 
+  <a href=" https://dharani-debug-stack.github.io/nostra-e-com/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square absolute top-24 left-40 text-2xl text-white "></i></a>
+  <a href="https://github.com/Dharani-debug-Stack/nostra-e-com"  target="_blank"><i class="fa-brands fa-github absolute top-24 right-40 text-2xl text-white "></i></a>
+ 
+</div>
+ 
+ 
+    <div class="flex flex-wrap items-center"> <span class="p-2 m-2 text-pink-400 bg-pink-200 rounded-xl">HTML</span> <span class="p-2 text-green-400 bg-green-200 rounded-xl">Tailwind CSS</span><span class="p-2 m-2 text-purple-400 bg-purple-200 rounded-xl">JavaScript</span></div>
+    </div>
+
+       
+    
+   </div>
+
+   
+
+ <!-- footer -->
+  <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="font-['Pacifico'] text-2xl text-primary mb-4">Dharani Arungulavan</h3>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        MERN Stack Developer passionate about creating exceptional web experiences 
+                        with modern technologies and clean code practices.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+                           <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+                          <i class="fa-brands fa-github"></i> 
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#skills" class="text-gray-300 hover:text-white transition-colors">Skills</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-gray-300">Web Development</span></li>
+                        <li><span class="text-gray-300">API Development</span></li>
+                        <li><span class="text-gray-300">UI/UX Design</span></li>
+                        <li><span class="text-gray-300">Consulting</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 text-sm">
+                    © 2025 DharaniArungulavan. All rights reserved.
+                </p>
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+    
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
